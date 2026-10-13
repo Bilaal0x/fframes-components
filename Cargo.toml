@@ -1,0 +1,133 @@
+[package]
+name = "fframes-components"
+version = "0.1.0"
+edition = "2024"
+publish = true
+description = "Isolated, mix-and-match animated video components for fframes, ported from the remocn Remotion library"
+license = "MIT"
+repository = "https://github.com/Bilaal0x/fframes-components"
+
+[lib]
+name = "fframes_components"
+path = "src/lib.rs"
+doctest = false
+
+[[bin]]
+name = "fframes-components"
+path = "src/main.rs"
+required-features = ["cli"]
+
+# Demonstrates the library API: selecting components in code and rendering them.
+[[example]]
+name = "custom_video"
+path = "examples/custom_video.rs"
+required-features = ["cli"]
+
+[dependencies]
+fframes = { version = "1.2.0", features = ["compile-time-svgtree"] }
+ttf-parser = "0.25"
+clap = { version = "4", features = ["derive"], optional = true }
+fframes_skia_renderer = { version = "1.2.0", features = ["vulkan"], optional = true }
+fframes_native_player = { version = "1.2.0", default-features = false, features = ["vulkan", "audio"], optional = true }
+
+[features]
+default = []
+
+# The `cli` feature adds the `fframes-components` binary: `--list`, `--components`, and every
+# standard fframes command (render, frame, strip, inspect, snapshot, audio, preview).
+cli = [
+    "dep:clap",
+    "dep:fframes_skia_renderer",
+    "dep:fframes_native_player",
+    "fframes/cli",
+]
+
+# Component features. Each compiles exactly one component into the catalog.
+per-character-rise = []
+soft-blur-in = []
+bottom-up-letters = []
+top-down-letters = []
+spring-scale-in = []
+staggered-fade-up = []
+short-slide-right = []
+squeeze-in = []
+tracking-in = []
+echo-stack = []
+period-drop = []
+confetti = []
+carousel-3d = []
+cursor-flyover = []
+glitch-cycle = []
+inflating-text = []
+lines-to-text = []
+multi-text-typewriter = []
+slide-in-text = []
+text-build = []
+text-messages = []
+text-reveal = []
+text-swell = []
+text-swap = []
+type-writer = []
+typing-code-block = []
+word-by-word = []
+word-flip = []
+
+# Additional component features.
+cinematic-text-swap = []
+text-rewrite = []
+word-gather = []
+check-cycle = []
+text-highlight = []
+logo-assemble = []
+channel-thread = []
+reel-collage = []
+prompt-zoom = []
+answer-highlight = []
+
+# Every component in this curated package.
+full = [
+    "per-character-rise",
+    "soft-blur-in",
+    "bottom-up-letters",
+    "top-down-letters",
+    "spring-scale-in",
+    "staggered-fade-up",
+    "short-slide-right",
+    "squeeze-in",
+    "tracking-in",
+    "echo-stack",
+    "period-drop",
+    "confetti",
+    "carousel-3d",
+    "cursor-flyover",
+    "glitch-cycle",
+    "inflating-text",
+    "lines-to-text",
+    "multi-text-typewriter",
+    "slide-in-text",
+    "text-build",
+    "text-messages",
+    "text-reveal",
+    "text-swell",
+    "text-swap",
+    "type-writer",
+    "typing-code-block",
+    "word-by-word",
+    "word-flip",
+    "cinematic-text-swap",
+    "text-rewrite",
+    "word-gather",
+    "check-cycle",
+    "text-highlight",
+    "logo-assemble",
+    "channel-thread",
+    "reel-collage",
+    "prompt-zoom",
+    "answer-highlight",
+]
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
