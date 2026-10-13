@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Video previews for the fframes-components Rust crate.">
+    <meta name="theme-color" content="#f4f1ea">
+    <title>fframes components</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="fframes components home">
+        <span class="mark" aria-hidden="true"></span>
+        fframes components
+      </a>
+      <nav aria-label="Project links">
+        <a href="https://crates.io/crates/fframes-components">crates.io</a>
+        <a href="https://github.com/Bilaal0x/fframes-components">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Rust components for fframes</p>
+          <h1 id="page-title">Pick an animation.<br>Compile only that one.</h1>
+        </div>
+        <div class="hero-copy">
+          <p>Reusable animated components with one Cargo feature per component. Browse the rendered output, then add only what your project needs.</p>
+          <div class="install-row">
+            <code id="install-command">cargo add fframes-components --no-default-features --features logo-assemble</code>
+            <button id="copy-command" type="button">Copy</button>
+          </div>
+          <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <h2 id="gallery-title">Component gallery</h2>
+          <p><span id="component-count">38</span> components · videos play while visible</p>
+        </div>
+        <div class="video-grid" id="video-grid" aria-live="polite"></div>
+        <noscript>
+          <p class="notice">JavaScript is required to build the video gallery.</p>
+        </noscript>
+      </section>
+    </main>
+
+    <footer>
+      <p>MIT licensed. Built for <a href="https://crates.io/crates/fframes">fframes</a>.</p>
+    </footer>
+  </body>
+</html>

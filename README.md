@@ -101,6 +101,29 @@ cargo run --release \
 
 Library consumers do not need the CLI, Vulkan renderer, or native player dependencies.
 
+## Demo site
+
+The static component gallery lives in [`docs/`](docs/) and uses only repository-relative paths.
+To preview it locally:
+
+```sh
+cd docs
+python -m http.server 8000
+```
+
+Then open <http://localhost:8000>.
+
+To deploy it with GitHub Pages:
+
+1. Commit and push the `docs/` directory to the repository's default branch.
+2. Open the GitHub repository and go to **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the default branch, choose the `/docs` folder, and click **Save**.
+5. Wait for the Pages deployment to finish. The site will be available at
+   `https://bilaal0x.github.io/fframes-components/`.
+
+Future changes to `docs/` deploy automatically whenever that branch is pushed.
+
 ## Credits
 
 The Rust implementation is MIT licensed. Components were ported from [remocn](https://github.com/Remocn/remocn) and [snapcn](https://github.com/shadcn-labs/snapcn), with the upstream namespaces removed from the public component IDs. Font and embedded demo-image details are listed in [CREDITS.md](CREDITS.md).

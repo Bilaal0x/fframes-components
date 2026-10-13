@@ -1,0 +1,355 @@
+:root {
+  color-scheme: light;
+  --ink: #20211f;
+  --muted: #6f716b;
+  --paper: #f4f1ea;
+  --panel: #ebe7de;
+  --line: #cbc7bd;
+  --accent: #b94f37;
+  --radius: 18px;
+  font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-header,
+main,
+footer {
+  width: min(100% - 40px, 1380px);
+  margin-inline: auto;
+}
+
+.site-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.mark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  position: relative;
+}
+
+.mark::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: absolute;
+  right: -4px;
+  bottom: -3px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+}
+
+.hero {
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.6fr);
+  gap: 72px;
+  align-items: end;
+  padding: 88px 0 76px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  color: var(--accent);
+  font: 700 12px/1.2 ui-monospace, "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 880px;
+  margin-bottom: 0;
+  font-size: clamp(52px, 7.5vw, 112px);
+  font-weight: 600;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+}
+
+.hero-copy > p:first-child {
+  max-width: 44ch;
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.install-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #faf8f3;
+}
+
+.install-row code {
+  min-width: 0;
+  padding: 14px 16px;
+  overflow: hidden;
+  color: #4c4d49;
+  font: 12px/1.4 ui-monospace, "SFMono-Regular", Consolas, monospace;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.install-row button {
+  border: 0;
+  border-left: 1px solid var(--line);
+  padding: 0 16px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font: 700 12px/1 inherit;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.install-row button:hover {
+  background: var(--panel);
+}
+
+.install-row button:active {
+  transform: translateY(1px);
+}
+
+.install-row button:focus-visible,
+a:focus-visible,
+video:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  outline-offset: 3px;
+}
+
+.copy-status {
+  min-height: 18px;
+  margin: 8px 0 0;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.gallery-section {
+  padding: 72px 0 120px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.section-heading h2 {
+  margin-bottom: 0;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.section-heading p,
+footer,
+.notice {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 52px 24px;
+}
+
+.video-card {
+  min-width: 0;
+}
+
+.video-card:nth-child(5n + 1) {
+  grid-column: span 2;
+  width: 75%;
+}
+
+.video-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  box-shadow: 0 22px 60px -42px rgba(51, 45, 34, 0.45);
+}
+
+.video-frame::before {
+  content: "Loading preview";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font: 11px/1 ui-monospace, "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.video-frame.ready::before {
+  display: none;
+}
+
+.video-frame.error::before {
+  content: "Preview unavailable";
+  color: var(--accent);
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 350ms ease;
+}
+
+.video-frame.ready video {
+  opacity: 1;
+}
+
+.video-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 2px 0;
+}
+
+.video-meta h3 {
+  margin: 0;
+  font: 650 15px/1.3 ui-monospace, "SFMono-Regular", Consolas, monospace;
+  letter-spacing: -0.03em;
+}
+
+.video-meta span {
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .site-header,
+  main,
+  footer {
+    width: min(100% - 28px, 1380px);
+  }
+
+  .site-header {
+    min-height: 66px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 46px;
+    padding: 64px 0 56px;
+  }
+
+  h1 {
+    font-size: clamp(46px, 14vw, 76px);
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading p {
+    margin: 8px 0 0;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .video-card:nth-child(5n + 1) {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
