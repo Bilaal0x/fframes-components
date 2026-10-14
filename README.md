@@ -60,6 +60,7 @@ Unused component modules are excluded at compile time. The default feature set i
 - `inflating-text`
 - `lines-to-text`
 - `logo-assemble`
+- `map-flyover`
 - `multi-text-typewriter`
 - `per-character-rise`
 - `period-drop`

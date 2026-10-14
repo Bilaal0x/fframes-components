@@ -75,6 +75,7 @@ entries! {
     "spinning-text-wheel" => crate::components::showcase::spinning_text_wheel::SpinningTextWheel;
     "text-marker" => crate::components::showcase::text_marker::TextMarker;
     "strike-through" => crate::components::showcase::strike_through::StrikeThrough;
+    "map-flyover" => crate::components::showcase::map_flyover::MapFlyover;
 }
 
 // Assert the shape the registry relies on, so a missing `meta_static` or `Default` is a clear

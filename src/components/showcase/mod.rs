@@ -14,6 +14,8 @@ pub mod circle_marker;
 pub mod crossed_off;
 #[cfg(feature = "logo-assemble")]
 pub mod logo_assemble;
+#[cfg(feature = "map-flyover")]
+pub mod map_flyover;
 #[cfg(feature = "prompt-zoom")]
 pub mod prompt_zoom;
 #[cfg(feature = "reel-collage")]

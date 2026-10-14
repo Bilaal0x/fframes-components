@@ -14,6 +14,7 @@ const components = [
   "inflating-text",
   "lines-to-text",
   "logo-assemble",
+  "map-flyover",
   "multi-text-typewriter",
   "per-character-rise",
   "period-drop",

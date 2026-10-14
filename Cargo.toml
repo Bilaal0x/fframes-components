@@ -92,6 +92,7 @@ crossed-off = []
 spinning-text-wheel = []
 text-marker = []
 strike-through = []
+map-flyover = []
 
 # Every component in this curated package.
 full = [
@@ -141,6 +142,7 @@ full = [
     "spinning-text-wheel",
     "text-marker",
     "strike-through",
+    "map-flyover",
 ]
 
 [profile.dev]

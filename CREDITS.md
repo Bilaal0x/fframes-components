@@ -37,6 +37,7 @@ Pictures are embedded so renders remain deterministic and offline.
 | --- | --- | --- |
 | `media/avatar1.png`, `media/avatar2.png` | `channel-thread` | demo art supplied for this port |
 | `media/placeholder-01.png` through `media/placeholder-08.png` | `logo-assemble`, `reel-collage` | original abstract placeholder art created for this crate |
+| `media/blue-marble-z4.jpg` | `map-flyover` | NASA Blue Marble: Next Generation imagery, courtesy of NASA EOSDIS / GIBS (`BlueMarble_NextGeneration`, `GoogleMapsCompatible_Level8` zoom-4 tiles stitched into one 4096×4096 Web Mercator image). NASA imagery is not copyrighted; credit given as NASA requests |
 
 ## Component sources
 
@@ -50,3 +51,4 @@ Pictures are embedded so renders remain deterministic and offline.
 | `spinning-text-wheel` | Ported from the `SpinningTextWheel` element in [Remotion Elements](https://github.com/remotion-dev/remotion/tree/main/packages/docs/elements/text/spinning-text-wheel) (`packages/docs/elements/text/spinning-text-wheel/spinning-text-wheel.tsx`) |
 | `text-marker` | Ported from the `TextMarker` element in [Remotion Elements](https://github.com/remotion-dev/remotion/tree/main/packages/docs/elements/text/text-marker) (`packages/docs/elements/text/text-marker/text-marker.tsx`). Its rough highlight is ported from `@remotion/rough-notation`'s `highlight` annotation and roughjs's `line` |
 | `strike-through` | Ported from the `StrikeThrough` element in [Remotion Elements](https://github.com/remotion-dev/remotion/tree/main/packages/docs/elements/text/strike-through) (`packages/docs/elements/text/strike-through/strike-through.tsx`). Its rough strike is ported from `@remotion/rough-notation`'s `strike-through` annotation and roughjs's `line` |
+| `map-flyover` | Ported from the `MapFlyover` element in [Remotion Elements](https://github.com/remotion-dev/remotion/tree/main/packages/docs/elements/maps/map-flyover) (`packages/docs/elements/maps/map-flyover/a-to-b-map-flyover.tsx`). Its route bend, plate framing and timing follow that source |
