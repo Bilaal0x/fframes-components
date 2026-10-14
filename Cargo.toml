@@ -87,6 +87,11 @@ answer-highlight = []
 youtube-subscribe-nudge = []
 youtube-end-card = []
 youtube-comment-highlight = []
+circle-marker = []
+crossed-off = []
+spinning-text-wheel = []
+text-marker = []
+strike-through = []
 
 # Every component in this curated package.
 full = [
@@ -131,6 +136,11 @@ full = [
     "youtube-subscribe-nudge",
     "youtube-end-card",
     "youtube-comment-highlight",
+    "circle-marker",
+    "crossed-off",
+    "spinning-text-wheel",
+    "text-marker",
+    "strike-through",
 ]
 
 [profile.dev]

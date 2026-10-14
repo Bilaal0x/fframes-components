@@ -51,7 +51,9 @@ Unused component modules are excluded at compile time. The default feature set i
 - `channel-thread`
 - `check-cycle`
 - `cinematic-text-swap`
+- `circle-marker`
 - `confetti`
+- `crossed-off`
 - `cursor-flyover`
 - `echo-stack`
 - `glitch-cycle`
@@ -66,11 +68,14 @@ Unused component modules are excluded at compile time. The default feature set i
 - `short-slide-right`
 - `slide-in-text`
 - `soft-blur-in`
+- `spinning-text-wheel`
 - `spring-scale-in`
 - `squeeze-in`
 - `staggered-fade-up`
+- `strike-through`
 - `text-build`
 - `text-highlight`
+- `text-marker`
 - `text-messages`
 - `text-reveal`
 - `text-rewrite`

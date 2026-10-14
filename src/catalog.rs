@@ -70,6 +70,11 @@ entries! {
     "youtube-subscribe-nudge" => crate::components::showcase::youtube_subscribe_nudge::YouTubeSubscribeNudge;
     "youtube-end-card" => crate::components::showcase::youtube_end_card::YouTubeEndCard;
     "youtube-comment-highlight" => crate::components::showcase::youtube_comment_highlight::YouTubeCommentHighlight;
+    "circle-marker" => crate::components::showcase::circle_marker::CircleMarker;
+    "crossed-off" => crate::components::showcase::crossed_off::CrossedOff;
+    "spinning-text-wheel" => crate::components::showcase::spinning_text_wheel::SpinningTextWheel;
+    "text-marker" => crate::components::showcase::text_marker::TextMarker;
+    "strike-through" => crate::components::showcase::strike_through::StrikeThrough;
 }
 
 // Assert the shape the registry relies on, so a missing `meta_static` or `Default` is a clear
