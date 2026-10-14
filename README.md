@@ -83,6 +83,7 @@ Unused component modules are excluded at compile time. The default feature set i
 - `word-by-word`
 - `word-flip`
 - `word-gather`
+- `youtube-comment-highlight`
 - `youtube-end-card`
 - `youtube-subscribe-nudge`
 

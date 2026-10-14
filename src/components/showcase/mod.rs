@@ -22,6 +22,8 @@ pub mod text_rewrite;
 pub mod text_swap;
 #[cfg(feature = "word-gather")]
 pub mod word_gather;
+#[cfg(feature = "youtube-comment-highlight")]
+pub mod youtube_comment_highlight;
 #[cfg(feature = "youtube-end-card")]
 pub mod youtube_end_card;
 #[cfg(feature = "youtube-subscribe-nudge")]
