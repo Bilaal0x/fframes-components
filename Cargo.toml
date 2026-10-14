@@ -6,6 +6,7 @@ publish = true
 description = "Isolated, mix-and-match animated video components for fframes, ported from the remocn Remotion library"
 license = "MIT"
 repository = "https://github.com/Bilaal0x/fframes-components"
+exclude = ["docs/", "build-env.ps1", "AGENT.md"]
 
 [lib]
 name = "fframes_components"
