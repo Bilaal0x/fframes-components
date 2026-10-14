@@ -24,3 +24,9 @@ Pictures are embedded so renders remain deterministic and offline.
 | --- | --- | --- |
 | `media/avatar1.png`, `media/avatar2.png` | `channel-thread` | demo art supplied for this port |
 | `media/placeholder-01.png` through `media/placeholder-08.png` | `logo-assemble`, `reel-collage` | original abstract placeholder art created for this crate |
+
+## Component sources
+
+| Component | Source |
+| --- | --- |
+| `youtube-subscribe-nudge` | Ported from the `YouTubeSubscribeNudge` element in [Remotion Elements](https://github.com/remotion-dev/remotion/tree/main/packages/docs/elements/youtube/youtube-subscribe-nudge) (`packages/docs/elements/youtube/youtube-subscribe-nudge/youtube-subscribe-nudge.tsx`) |

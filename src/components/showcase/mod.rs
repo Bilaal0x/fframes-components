@@ -22,3 +22,5 @@ pub mod text_rewrite;
 pub mod text_swap;
 #[cfg(feature = "word-gather")]
 pub mod word_gather;
+#[cfg(feature = "youtube-subscribe-nudge")]
+pub mod youtube_subscribe_nudge;

@@ -37,6 +37,7 @@ const components = [
   "word-by-word",
   "word-flip",
   "word-gather",
+  "youtube-subscribe-nudge",
 ];
 
 const grid = document.querySelector("#video-grid");

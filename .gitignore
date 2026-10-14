@@ -1,2 +1,4 @@
 target/
 token.txt
+AGENT.md
+build-env.ps1

@@ -67,6 +67,7 @@ entries! {
     "reel-collage" => crate::components::showcase::reel_collage::ReelCollage;
     "prompt-zoom" => crate::components::showcase::prompt_zoom::PromptZoom;
     "answer-highlight" => crate::components::showcase::answer_highlight::AnswerHighlight;
+    "youtube-subscribe-nudge" => crate::components::showcase::youtube_subscribe_nudge::YouTubeSubscribeNudge;
 }
 
 // Assert the shape the registry relies on, so a missing `meta_static` or `Default` is a clear

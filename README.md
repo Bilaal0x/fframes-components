@@ -83,6 +83,7 @@ Unused component modules are excluded at compile time. The default feature set i
 - `word-by-word`
 - `word-flip`
 - `word-gather`
+- `youtube-subscribe-nudge`
 
 `cinematic-text-swap` is the preset-driven cinematic transition. `text-swap` is the original lightweight text-swap component. The distinct IDs avoid a feature and catalog collision.
 
