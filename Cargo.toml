@@ -85,6 +85,7 @@ reel-collage = []
 prompt-zoom = []
 answer-highlight = []
 youtube-subscribe-nudge = []
+youtube-end-card = []
 
 # Every component in this curated package.
 full = [
@@ -127,6 +128,7 @@ full = [
     "prompt-zoom",
     "answer-highlight",
     "youtube-subscribe-nudge",
+    "youtube-end-card",
 ]
 
 [profile.dev]

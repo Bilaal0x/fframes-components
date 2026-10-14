@@ -37,6 +37,7 @@ const components = [
   "word-by-word",
   "word-flip",
   "word-gather",
+  "youtube-end-card",
   "youtube-subscribe-nudge",
 ];
 
